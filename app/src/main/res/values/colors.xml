@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f55a3c</color>
+    <color name="colorPrimaryDark">#cc4c33</color>
+    <color name="colorAccent">#f55a3c</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="dimgrey">#696969</color>
+    <color name="lightOrange">#FFA500</color>
+    <color name="vanDykeBrown">#663f33</color>
+</resources>

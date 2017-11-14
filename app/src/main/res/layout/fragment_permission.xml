@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="bluetowel.com.laundryhelper.activities.SplashActivity">
+
+    <TextView
+        android:id="@+id/as_tv_perm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="90dp"
+        android:text="We need permission to save the images of your clothes!!!"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        />
+
+    <Button
+        android:id="@+id/fp_b_perm"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="18sp"
+        android:text="Grant Permission"
+        android:textColor="@color/white"
+        android:layout_above="@+id/fp_b_next"
+        android:background="@color/vanDykeBrown"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:id="@+id/fp_b_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Exit"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:stateListAnimator="@null"/>
+</RelativeLayout>
