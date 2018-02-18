@@ -186,15 +186,28 @@ public class MainActivity extends AppCompatActivity
 
                 if (selectedImageUri != null) {
 
-                    Picasso
-                            .with(MainActivity.this)
-                            .invalidate(selectedImageUri);
+                    Picasso picasso = new Picasso.Builder(MainActivity.this).loggingEnabled(true).listener(new Picasso.Listener() {
+                        @Override
+                        public void onImageLoadFailed(Picasso picasso, Uri uri, Exception exception) {
+                            exception.printStackTrace();
+                        }
+                    }).build();
 
-                    Picasso
-                            .with(MainActivity.this)
+
+                    picasso.invalidate(selectedImageUri);
+                    picasso
                             .load(selectedImageUri)
                             .resize(Constants.imageStorageWidth, 0)
                             .into(target);
+//                    Picasso
+//                            .with(MainActivity.this)
+//                            .invalidate(selectedImageUri);
+//
+//                    Picasso
+//                            .with(MainActivity.this)
+//                            .load(selectedImageUri)
+//                            .resize(Constants.imageStorageWidth, 0)
+//                            .into(target);
                 }
 
             } catch (Exception e) {
